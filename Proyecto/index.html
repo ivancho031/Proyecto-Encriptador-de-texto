@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de tu página</title>
+    <!-- Enlace a una hoja de estilos CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="js.js"></script>
+</head>
+<body>
+    <header class="header__encriptador">
+        <img class="imgH" src="assets/logo.png" alt="logo a">
+        <h1 class="title">Ivan the Encryptor</h1>
+    </header>
+   
+
+    <main class="encriptador">
+        <form id="myForm"> 
+            <textarea class="areatexto" cols="100" rows="20"  placeholder="Ingresa el texto" type="text" id="textCrypt" name="nombre"></textarea>
+            <section class="encriptador__contenido">
+                <img src="assets/icono.png" alt="icono¡">
+                <p class="encriptador__texto">Solo letras minusculas y sin acentos</p>
+            </section class="botones">
+            <button class="boton__encriptar" onclick="encriptar()" type="button">Encriptar</button>
+            <button class="boton__desencriptar" onclick="desencriptar()" type="button">Desencriptar</button>
+        </form>
+        <aside class="cuadro">
+            <section id="copy">
+            <img src="assets/Muñeco.png" alt="muñeco">
+            <article>
+            <h3>Ningun mensaje fue encontrado</h3>
+            <p> Ingrese el texto que desea encriptar o Desencriptar</p>
+            </article>        
+            </section>
+            <button  id="boton_copiar" class="boton_copiar hiden"  onclick="copiar()">Copiar</button>                        
+        </aside>    
+    </main>
+    <footer>
+        <p>© 2024 Ivan Alonso. Todos los derechos reservados.</p>
+    </footer>
+</body>
+    <script src="js.js"></script>
+</html>
